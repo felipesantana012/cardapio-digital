@@ -29,12 +29,11 @@ header{
 
 .nav-item a{
     text-decoration: none;
-    color: var(--cor-pretoClaro-fonte);
+    color: var(--cor-fonte-medio);
 
 }
 
 .nav-item.active a:hover{
-    color: var(--cor-pretoEscuro-fonte);
     border-bottom: 3px solid var(--cor-secundaria-Claro);
     transition-duration: 0.1s;
 }
@@ -48,14 +47,11 @@ header{
 
 #modoDark{
     font-size: 28px;
-    color: var(--cor-secundaria-Escuro);
+    color: var(--cor-fonte-medio);
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
-#modoDark:hover{
-    color: var(--cor-pretoClaro-fonte);
-}
 
 #mobile_btn{
     display: none;
@@ -77,17 +73,18 @@ header{
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+       color: var(--cor-fonte-medio);
     }
+   
 
     .botoes{
         flex-direction: row-reverse;
         gap: 18px;
-       
     }
     
     #modoDark{
         font-size: 22px;
-        color: var(--cor-secundaria-Escuro);
+        color: var(--cor-fonte-medio);
     }
 
     #mobile_menu.active{
