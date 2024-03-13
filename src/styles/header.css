@@ -12,10 +12,14 @@ header{
 
 #nav_logo{
     font-size: 24px;
-    color: var(--cor-secundaria-amareloEscuro);
+    color: var(--cor-secundaria-Escuro);
+    transition-duration: 0.2s;
     
 }
 
+#nav_logo:hover{
+    color: var(--cor-secundaria-Claro);   
+}
 
 #nav_list{
     display: flex;
@@ -26,11 +30,31 @@ header{
 .nav-item a{
     text-decoration: none;
     color: var(--cor-pretoClaro-fonte);
+
 }
 
-.nav-item.active a {
+.nav-item.active a:hover{
     color: var(--cor-pretoEscuro-fonte);
-    border-bottom: 3px solid var(--cor-secundaria-amareloClaro);
+    border-bottom: 3px solid var(--cor-secundaria-Claro);
+    transition-duration: 0.1s;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+#modoDark{
+    font-size: 28px;
+    color: var(--cor-secundaria-Escuro);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+#modoDark:hover{
+    color: var(--cor-pretoClaro-fonte);
 }
 
 #mobile_btn{
@@ -53,6 +77,17 @@ header{
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+
+    .botoes{
+        flex-direction: row-reverse;
+        gap: 18px;
+       
+    }
+    
+    #modoDark{
+        font-size: 22px;
+        color: var(--cor-secundaria-Escuro);
     }
 
     #mobile_menu.active{
