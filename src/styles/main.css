@@ -38,6 +38,7 @@
 #cta_buttons a{
     text-decoration: none;
     color: var(--cor-fonte-medio);
+    font-size: 13px; 
 }
 
 #banner{
@@ -107,6 +108,9 @@
         align-items: center;
     }
 
+    #cta_buttons a{
+        font-size: 11px; 
+    }
   
 
 }

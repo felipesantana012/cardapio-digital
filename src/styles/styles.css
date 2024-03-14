@@ -46,6 +46,7 @@ section{
     padding: 28px 8%;
 }
 
+
 .btn-default{
     border: none;
     display: flex;
@@ -65,10 +66,11 @@ section{
     background-color: var(--cor-secundaria-Claro);
 }
 
+
+
 .social-media-buttons{
     display: flex;
     gap: 30px;
-
 }
 
 .social-media-buttons a{
