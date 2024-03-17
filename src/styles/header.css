@@ -2,7 +2,7 @@ header{
     width: 100%;
     padding: 20px 8%;
     background-color: var(--cor-primaria-medio);
-    box-shadow: 0px 0px 8px var(--cor-fonte-medio);
+    box-shadow: 0px 0px 8px 2px var(--cor-box-shadow-secundario);
   
     
 }

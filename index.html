@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/styles/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Cardapio Digital</title>
 </head>
 <body>
@@ -53,6 +54,10 @@
     </header>
 
     <main id="content">
+
+        <!-- Botão "voltar ao topo" -->
+    <button id="btnVoltarTopo" class="btn-default"><i class="fa-solid fa-arrow-up"></i></button>
+
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
@@ -60,7 +65,7 @@
                 <p class="description">Do aroma tentador às texturas irresistíveis, cada item em nosso cardápio é uma promessa de sabor que vai além das suas expectativas.</p>
                 
                 <div id="cta_buttons">
-                    <a href="#" class="btn-default"><i class="fa-solid fa-book-open"> Ver Cardapio</i> </a>
+                    <a href="#menu" class="btn-default"><i class="fa-solid fa-book-open"> Ver Cardapio</i> </a>
 
                     <a href="tel:+5555555555" class="btn-default"><i class="fa-solid fa-phone"> (81) 99999-8888</i> </a>
                 </div>
@@ -88,7 +93,6 @@
 
         </section>
 
-
         <section id="menu">
             <h2 class="section-title">Cardapio</h2>
             <h3 class="section-subtitle">Nossos Pratos Especiais</h3>
@@ -102,8 +106,8 @@
                     </div>
 
                     <img src="/src/img/depositphotos-Photoroom.png-Photoroom.png" class="dish-image" alt="prato de broculis com frango">
-                    <h3 class="dish-title">frango grelhado</h3>
-                    <span class="dish-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
+                    <h3 class="dish-title">Frango grelhado</h3>
+                    <span class="dish-description">Fango assado na grelha com legumes no acompanhamento. </span>
 
                     <div class="dish-rate">
                         <i class="fa-solid fa-star star"></i>
@@ -129,8 +133,8 @@
                     </div>
 
                     <img src="/src/img/jantar-03-Photoroom.png-Photoroom.png" class="dish-image" alt="prato de jantar">
-                    <h3 class="dish-title">frango ao molho </h3>
-                    <span class="dish-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
+                    <h3 class="dish-title">Frango ao molho </h3>
+                    <span class="dish-description">Frango com o molho da casa, acompanhado de batata e refri. </span>
 
                     <div class="dish-rate">
                         <i class="fa-solid fa-star star"></i>
@@ -157,7 +161,7 @@
 
                     <img src="/src/img/prato-05-Photoroom.png-Photoroom.png" class="dish-image" alt="prato de carne grelhada e toscana">
                     <h3 class="dish-title">Carne de boi grelhada</h3>
-                    <span class="dish-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
+                    <span class="dish-description">Carne de boi de alta qualidade, com toscana e batata frita </span>
 
                     <div class="dish-rate">
                         <i class="fa-solid fa-star star"></i>
@@ -183,8 +187,8 @@
                     </div>
 
                     <img src="/src/img/prato07-Photoroom.png-Photoroom.png" class="dish-image" alt="prato bisteca de porco com batata frita">
-                    <h3 class="dish-title">bisteca de porco</h3>
-                    <span class="dish-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
+                    <h3 class="dish-title">Bisteca de porco</h3>
+                    <span class="dish-description">Bisteca assado no olho, com castanhas e batata frita. </span>
 
                     <div class="dish-rate">
                         <i class="fa-solid fa-star star"></i>
@@ -216,7 +220,7 @@
                     <div class="feedback">
                         <img src="/src/img/img-perfil/cropped-perfil-02-Photoroom.png-Photoroom.png" class="feedback-avatar" alt="imagens de perfil">
                         <div class="feedback-content">
-                            <p>Fulano da Silva
+                            <p>Thiago Romeu
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -224,14 +228,14 @@
                                     <i class="fa-solid fa-star"></i>
                                 </span>
                             </p>
-                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, nemo ipsum dolorum error doloremque eos magni molestias, nulla iste libero, dignissimos praesentium? In dolores beatae sapiente totam expedita? Voluptates, provident."</p>
+                            <p>"A mehor comida que ja provei na minha vida, um sabor extraordinario, realmente é incrivel os pratos."</p>
                         </div>
                     </div>
 
                     <div class="feedback">
                         <img src="/src/img/img-perfil/perfil_fake_88e093785ba8-Photoroom.png-Photoroom.png" class="feedback-avatar" alt="imagens de perfil">
                         <div class="feedback-content">
-                            <p>Fulaninha da pereira
+                            <p>Sarah Manuela
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -239,7 +243,7 @@
                                     <i class="fa-solid fa-star"></i>
                                 </span>
                             </p>
-                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, nemo ipsum dolorum error doloremque eos magni molestias, nulla iste libero, dignissimos praesentium? In dolores beatae sapiente totam expedita? Voluptates, provident."</p>
+                            <p>"A comida tem o sabor unico, recomendo muito esse restaurante , comida, atendimento e entrega são 5 estrelas "</p>
                         </div>
                     </div>
                 </div>
@@ -249,6 +253,26 @@
         </section>
     </main>
 
+    <footer>
+        <div id="footer_items">
+            <span id="copyrigth">&copy 2024 Felipe Santana</span>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     
     <script src="src/script/script.js"></script>
