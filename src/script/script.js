@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-
+    //botão do menu hamburguer, para mostrar o menu em mobile
     $('#mobile_btn').on('click', function () {
         $('#mobile_menu').toggleClass('active');
         $('#mobile_btn').find('i').toggleClass('fa-x');   
@@ -23,7 +23,7 @@ $(document).ready(function(){
         }
     });
 
-    
+
      // Rolagem suave para o topo da página quando o botão é clicado
      $('#btnVoltarTopo').click(function() {
         $('html, body').animate({scrollTop: 0}, 'slow');
@@ -40,7 +40,7 @@ $(document).ready(function(){
     }
 
     //percorrer o array com as tags e depois chamar a função
-    const seletores = ['#cta','#banner','.dish','.shape','.feedback']
+    const seletores = ['#cta','#banner','.shape','.feedback']
     for (const key in seletores) {
         revelarElementoTop(seletores[key]);
     }
@@ -52,6 +52,14 @@ $(document).ready(function(){
         duration: '2300',
         distance: '20%'
     });
+
+    ScrollReveal().reveal('.dish', {
+        origin:'left',
+        duration: '2300',
+        distance: '20%'
+    });
+
+    
 
    
    
