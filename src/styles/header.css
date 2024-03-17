@@ -1,9 +1,9 @@
 header{
     width: 100%;
-    padding: 28px 8%;
+    padding: 20px 8%;
     background-color: var(--cor-primaria-medio);
-    
     box-shadow: 0px 0px 8px var(--cor-fonte-medio);
+  
     
 }
 
@@ -65,7 +65,7 @@ header{
     display: none;
 }
 
-@media screen and (max-width:1170px){
+@media screen and (max-width:1137px){
 
     #nav_list, #navbar .btn-default{
         display: none;
