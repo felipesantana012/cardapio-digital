@@ -4,6 +4,7 @@
 @import url('/src/styles/header.css');
 @import url('/src/styles/main.css');
 @import url('/src/styles/menu.css');
+@import url('/src/styles/testimonials.css');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -14,7 +15,7 @@
 
 :root{
     --cor-primaria-claro:#fff9ea;
-    --cor-primaria-medio: #fce8bae5;
+    --cor-primaria-medio: #fff1d1c0;
 
     --cor-secundaria-Claro: #ffe100;
     --cor-secundaria-Medio: #ffcb45;
